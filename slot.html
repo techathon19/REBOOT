@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <link rel="icon" href="https://downloadpng.com/wp-content/uploads/thenext-thumb-cache//girl-shopping-png-5563af8c7580733d007fa7e86c1a8cd1-300x300.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="/angular/userdetails.js"></script>
+        <script src="Js/slot.js"></script>
+        <title>Hotspot</title>
+        <style type="text/css">
+            .foot{
+                margin-top: 105px;
+                padding-top:10px;
+                padding-bottom: 10px;
+                background-color: black;
+                color: white;
+            }
+            body{
+                background-image:linear-gradient(to right,white,#5e99f7);
+            }
+
+        </style>
+    </head>
+    <body ng-app="App" ng-controller="myCtrl">
+        <nav class="navbar navbar-inverse navbar-fixed nb">
+            <div class="container">
+                <div class="navbar-header">
+                    <button  class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <p class="navbar-brand">{{name.name}}</p>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span>Slot</a></li>
+                        <li><a href="addhall.html"><span class="glyphicon glyphicon-cog"></span> Addhall</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        
+
+        <div class="container sign">
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                SLOT
+                            </div>
+                            <div class="panel-body">
+                                <form method="get" action="table.html">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" name="name" placeholder="Name" required="true">
+                                    </div>
+                                    <div class="form-group">
+                                     <b>EVENT TYPE:</b>
+                                     <select class="form-control">
+                                        <option name="Corporate">Corporate</option>
+                                        <option name="Concerts">Concerts</option>
+                                        <option name="Personal">Personal</option>
+                                     </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" name="event" placeholder="Event Name" required="true">
+                                    </div>
+                                    <div class="form-group">
+                                     <b>DATE:</b>
+                                     <input class="form-control" type="date" name="date">
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-primary btn-block"  >submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div id="table">
+
+            </div>
+        <footer>
+                    <div class="foot">
+                        <div class="container">
+                            <center>
+                               © Hotspot. All Rights Reserved and Contact Us: +91 9876543210
+                            </center>
+                        </div>
+                    </div>
+        </footer>  
+        
+    </body>
+</html>
